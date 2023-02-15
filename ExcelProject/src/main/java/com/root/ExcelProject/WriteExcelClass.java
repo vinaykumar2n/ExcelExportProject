@@ -70,6 +70,7 @@ public class WriteExcelClass {
 		XSSFRow row= sheet.createRow(0);
 		XSSFCell cell = row.createCell(0);
 		cell.setCellValue("Employees Information Report");
+		sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, 4));
 	}
 	
 	private static void reportHeadings(XSSFWorkbook wb, XSSFSheet sheet) {
